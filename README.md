@@ -66,7 +66,7 @@ Server:
     
 Apache:
 
-    Apache is a Web server software that is used within the overall product of Redirect Manager. Again, I interacted very little with Apache throughout this proecss, and this was left up to my Lead and Senior developers. I simply know that it has played a role with it.
+    Apache is a Web server software that is used within the overall product of Redirect Manager. I had no interaction Apache throughout this proecss, and this was left up to my Lead and Senior developers. I simply know that it plays a role with the overall program.
 
 With that, everything is wrapped up. As I mentioned before, I would really like to stress that this is not a 100% general software program for having redirects go live. This is a software program that I had created, along with help from my Senior Developer and Lead Developer, in order to find a solution for making redirects go live quicker within the Citrix Systems, Inc. internal sites. This should serve as a skeleton and be expanded upon. At the moment, I have no plans to continue development on this project. I am putting this up for proof of work that I have done, and so that it can help anyone who may possibly need such a program themselves. 
 
