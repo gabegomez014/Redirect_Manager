@@ -1,5 +1,7 @@
 This is the README for Redirect Manager.
 
+Before starting, I highly suggest downloading this and reading it within a text editor, or whatever other software you use to read documents. 
+
 Redirect Manager is a project that I had worked on during my internship at Citrix Systems, Inc during the summer of 2017 (May 2017 - July 2017) with direct help from my Lead Developer, Phani Jasthi (https://www.linkedin.com/in/phanijasthi/), and my Senior Developer, Raghu Varma (). 
 
 This was written in Node.JS, and this is the source code for it. In order to fully implement the project, Jira, Apache and Chef software are also utilized. 
