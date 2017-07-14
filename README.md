@@ -17,7 +17,6 @@ Overview of the software:
 Redirect Manager is a tool that automates the process of creating a redirect. 
 
 As mentioned earlier, Jira, Apache and Chef software was used in the process of making the Redirect Manager go live for use by other members of the company for the Digital Marketing team. These will be covered in detail below.
-**************************************************************************************************************************
 
 **************************************************************************************************************************
 Jira: 
@@ -31,7 +30,6 @@ With that said, for our set up, we had 4 statuses that were part of the workflow
 For the transitions, we had one for Open to Push, Push to Live, Live to Sunset, Live to Open. You can add more transitions if you want for whichever status-to-status you want. The transitions are key. The reason being this is where webhooks are set. In the above paragraph, I spoke on the webhooks a bit. Basically, a webhook listens for certain events, and once the webhooks are triggered due to that event, it triggers another event at a location listening to the webhook for certain code to run (here's a better explanation: (https://webhooks.pbworks.com/w/page/13385124/FrontPage). During testing, Ngrok was our best friend. Here's a link for what ngrok is about: (https://ngrok.com/). Basically, ngrok gives you a link that listens for webhooks and sends the post to the program so that the code can be run. To use ngrok, you simply put the executable in a place you can always find and on a terminal, run "./ngrok http 'port number'", where 'port number' is where you want to ngrok to listen to. So if you want ngrok to listen to your 3000 port, you'd write "./ngrok http 3000". It is through this that validation steps were able to occur because we set a webhook on the transition from Open to Push status so validation could take place. Now if you read the previous paragraph, you may remember the mention that when a ticket is created, it starts off by directly starting in the Push status. When we implemented this, we realized that the webhook for Open to Push was no longer triggered. As a result, we needed to find a work around so that the validation gets triggered for the newly created ticket. In truth, Raghu Varma, mentioned in the beginning, handled this workaround, so I do not know of his exact solution towards it. Regardless, your Jira board does not have to follow ours. It's simply a skeleton for your implementation. So if finding the workaround is not worth the effort, you can just have the user transition from Open to Push, or whatever you wish to call your statuses, and it will work just as well. 
 
 With that, the Jira part is pretty much wrapped up. 
-**************************************************************************************************************************
 
 **************************************************************************************************************************
 Node.JS Source Code:
@@ -65,19 +63,16 @@ Now for app.js is how the program knows what routes to use and what to do on exc
 Then comes the package.json file. Within it holds the dependencies used within the project. This file is very important for the modules within it are needed in order for the program to run, to begin with. Modules saved within this file can easily be installed with the command "npm install" on the terminal.
 
 Finally, the README.md, and you already know what this is.
-**************************************************************************************************************************
 
 **************************************************************************************************************************
 Chef:
     
 Chef is a software program that helps automate IT infrastructure. In truth, I did not touch this during my internship, and have very little knowledge. The extent on what I know of Chef is that this is the program that would check the currently live redirects and actually implement the 301/302 HTTP status code for it. This is something that my Senior Developer and Lead Developer handled.
-**************************************************************************************************************************
 
 **************************************************************************************************************************
 Server: 
     
 After testing with ngrok, it was necessary that we put the code on a server so that the code does not have to constantly run on the local computer. So unless you have a computer that you can dedicate to running the program 24/7, I'd look for a server to put this on. Again, I have little knowledge on this component on this piece of the project for my Senior Developer and Lead Developer mainly dealt with this. 
-**************************************************************************************************************************
 
 **************************************************************************************************************************    
 Apache:
