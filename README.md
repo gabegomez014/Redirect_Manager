@@ -1,5 +1,10 @@
 This is the README for Redirect Manager.
 
+**************************************************************************************************************************
+Source code coming soon. Must wait on my Lead Developer and Senior Developer to get back to me with the code that does not have company information with it.
+**************************************************************************************************************************
+
+
 Before starting, I highly suggest downloading this and reading it within a text editor, or whatever other software you use to read documents. 
 
 Redirect Manager is a project that I had worked on during my internship at Citrix Systems, Inc during the summer of 2017 (May 2017 - July 2017) with direct help from my Lead Developer, Phani Jasthi (https://www.linkedin.com/in/phanijasthi/), and my Senior Developer, Raghu Varma (). 
@@ -72,4 +77,4 @@ With that, everything is wrapped up. As I mentioned before, I would really like 
 
 As mentioned above, but to make the point clearer, I would love it for people to take this and improve on it as they see fit, and to use however they see fit. 
 
-Happy coding
+Happy coding!
