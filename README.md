@@ -1,7 +1,7 @@
 This is the README for Redirect Manager.
 
 **************************************************************************************************************************
-Source code coming soon. Must wait on my Lead Developer and Senior Developer to get back to me with the code that does not have company information with it.
+Source code kept by the company I worked on this project for, Citrix. 
 **************************************************************************************************************************
 
 
