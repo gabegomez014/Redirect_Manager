@@ -1,7 +1,7 @@
 This is the README for Redirect Manager.
 
 **************************************************************************************************************************
-Source code kept by the company I worked on this project for, Citrix. 
+Source code kept by the company (Citrix Systems). 
 **************************************************************************************************************************
 
 
